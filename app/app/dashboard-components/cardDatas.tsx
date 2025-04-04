@@ -110,7 +110,7 @@ function CardDatas() {
   return (
     <div className='flex flex-row gap-4'>
       {/* Sales (MRP) */}
-      <Card className='w-full'>
+      <Card className='w-full flex-1'>
         <CardHeader className='border-b border-gray-200 pb-2'>
           <CardTitle className='flex items-center justify-between text-sm font-semibold'>
             Sales (MRP) <AiOutlineQuestionCircle className='text-gray-500' />
@@ -142,7 +142,7 @@ function CardDatas() {
       </Card>
 
       {/* Total Quantity Sold */}
-      <Card className='w-full'>
+      <Card className='w-full flex-1'>
         <CardHeader className='border-b border-gray-200 pb-2'>
           <CardTitle className='flex items-center justify-between text-sm font-semibold'>
             Total Quantity Sold <AiOutlineQuestionCircle className='text-gray-500' />
@@ -173,7 +173,7 @@ function CardDatas() {
       </Card>
 
       {/* Top Cities Pie Chart */}
-      <Card className='w-full'>
+      <Card className='w-full flex-1'>
         <CardHeader className='border-b border-gray-200 pb-2'>
           <CardTitle className='flex items-center justify-between text-sm font-semibold'>
             Top Cities <AiOutlineQuestionCircle className='text-gray-500' />

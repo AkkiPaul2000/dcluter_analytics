@@ -24,7 +24,7 @@ interface LineChartProps {
 }
 
 const LineChart: FC<LineChartProps> = ({ data, valueKey, datasetLabel, noDot = false, yAxisFormat, xAxisFormat, xTickInterval }) => {
-  const labels = data.map((item: any) => 
+  const labels = data.map((item: any) =>
     xAxisFormat ? xAxisFormat(item["blinkit_insights_sku.created_at"]) : item["blinkit_insights_sku.created_at"]
   );
 
@@ -91,7 +91,7 @@ const LineChart: FC<LineChartProps> = ({ data, valueKey, datasetLabel, noDot = f
     }
   };
 
-  return <Line data={chartData} options={options} />;
+  return <Line data={chartData} options={options} className='w-full' />;
 };
 
 export default LineChart;

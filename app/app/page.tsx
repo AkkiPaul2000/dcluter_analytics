@@ -3,26 +3,20 @@ import React, { useState } from "react";
 import blinkitJSON from "../public/data/hiring-task.json";
 import {
   Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
+
 } from "@/components/ui/card";
-import Sidebar from "@/components/mine/sidebar";
 import { NextPage } from "next";
 import Header from "./dashboard-components/header";
 import DataContent from "./dashboard-components/dataContent";
 
 const Home: NextPage = () => {
-  const { cards } = blinkitJSON;
   const quickCommerceBrands = ["Blinkit", "Zepto", "Instamart"];
 
   // Track the selected brand (default can be the first one or null)
   const [selectedBrand, setSelectedBrand] = useState<string>("Blinkit");
 
   return (
-    <main className="flex flex-1 flex-col border border-[#EBEBEB] rounded-md m-5">
+    <main className="flex flex-1 overflow-hidden flex-col border border-[#EBEBEB] rounded-md m-5">
       <Header />
       <div className="flex h-20 items-center px-4 border border-[#EBEBEB] ">
         <div className="flex gap-4 border border-[#EBEBEB] rounded-md p-2">
