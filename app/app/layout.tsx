@@ -32,7 +32,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="flex w-100%">
+        <div className="flex max-w-screen overflow-hidden">
         <div className="flex justify-between h-screen sticky top-0 px-2 flex-col py-6">
           <div className="flex flex-col items-center gap-2">
             {brands.map((brand,index)=>{

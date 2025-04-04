@@ -22,7 +22,7 @@ const Home: NextPage = () => {
   const [selectedBrand, setSelectedBrand] = useState<string>("Blinkit");
 
   return (
-    <main className="flex flex-col border border-[#EBEBEB] rounded-md m-5">
+    <main className="flex flex-1 flex-col border border-[#EBEBEB] rounded-md m-5">
       <Header />
       <div className="flex h-20 items-center px-4 border border-[#EBEBEB] ">
         <div className="flex gap-4 border border-[#EBEBEB] rounded-md p-2">
